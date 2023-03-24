@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+/*import Button from "./components/Button";*/
+import SwitchColor from "./components/SwitchColor";
+import "./App.css"; 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+ function App() {
+    return (
+        <div className="bg-gradient-to-r from-cyan-500 to-blue-600"> 
+         <div className="text-4xl text-purple-600 border rounded pl-20 items-center">
+            App Component, What will I do?
+            
+        </div>
+             <SwitchColor />
+        </div>
+        
+        );
 
-export default App;
+ }
+ 
+ export default App;
